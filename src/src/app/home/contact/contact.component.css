@@ -1,0 +1,164 @@
+.contact_banner{
+    width: 100%;
+    height: 420px;
+ }
+ .contact_banner .banner_img{
+      /* background-image: url('assets/images/banner/banner-1.png');  */
+     background-size: cover !important;
+     background-position: 50% 0% !important;
+     width: 100%;
+     height: 100%;
+     background-repeat: no-repeat;
+     display: block;
+ }
+ .contact_banner .banner_block{
+   position: relative;
+ }
+ .contact_banner .banner_content{
+     position: absolute;
+     left: 0px;
+     background: rgba(60, 60, 60, 0.8);
+     display: inline-block;
+     width: 500px;
+     padding: 30px 30px 20px 30px;
+ }
+ .contact_banner .banner_head{
+    color: #fff;
+    font-size: 36px;
+    font-family: "OpenSans-Light";
+    margin: 10px 0px;
+ }
+ .contact_banner .banner_text{
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0px;
+    font-family: "OpenSans";
+    min-height: 105px;
+ }
+ .contact_banner .banner_btn{
+    margin: 20px 0px 10px 0px;
+     text-align: right;
+ }
+ .contact_banner .banner_btn>a{
+    color: #fff;
+     font-size: 14px;
+     margin: 10px 0px;
+     font-family: "OpenSans";
+     background: #006ec1;
+     padding: 8px 28px;
+ }
+ .contact_banner .banner_btn>a:hover, .contact_banner .banner_btn>a:focus{
+    text-decoration: none;
+    background: #025ca0;
+ }
+ /*=========== banner styles end ============*/
+ 
+ /*=========== wrapper styles start ============*/
+ .contact_wrapper{
+    padding: 30px 0px 30px 0px;
+ }
+ .locations_head{
+ 
+ }
+ .locations_head h4{
+    color: #ff8700;
+     font-size: 25px;
+     font-weight: 600;
+     margin: 8px 0px 10px 0px;
+ }
+ .locations_head p{
+    color: #333;
+     font-size: 16px;
+     font-weight: 500;
+     margin: 4px 0px 4px 0px;
+ }
+ .locations_head p>strong{
+     color: #333;
+     font-size: 16px;
+     font-weight: 600;
+     margin: 4px 0px 4px 0px;
+ }
+ .locations_map{
+    min-height: 400px;
+     border: 1px solid #ccc;
+     margin: 15px 0px 15px 0px;
+ }
+ .locations_list{
+    padding: 0px 0px 0px 0px;
+ }
+ .locations_block{
+   padding: 15px 0px 15px 0px;
+ }
+ .locations_block h4{
+     color: #ff8700;
+     font-size: 18px;
+     font-weight: 600;
+     margin: 8px 0px 10px 0px;
+     border-bottom: 1px solid #e8e8e8;
+     border-top: 1px solid #e8e8e8;
+     padding: 10px 8px 10px 8px;
+ }
+ .locations_block_ul{
+     padding: 0px 0px 8px 12px;
+     margin: 0px;
+     list-style-type: none;
+ }
+ .locations_block_ul>li{
+     padding: 6px 0px 6px 0px;
+     font-size: 14px;
+     color: #333;
+     margin: 0px 0px 4px 0px;
+     line-height: 22px;
+ }
+ .contact_form{
+     border: 1px solid #ddd;
+     padding: 10px 15px 15px 15px;
+ }
+ .contact_from_head{
+     font-size: 18px;
+     margin: 8px 0px 16px 0px;
+     color: #333;
+     font-weight: 600;
+ }
+ .contact_from_group{
+    margin-bottom: 12px;
+ }
+ .contact_from_group label{
+    display: inline-block;
+     max-width: 100%;
+     margin-bottom: 5px;
+     font-size: 14px;
+     font-weight: 500;
+     color: #333;
+ }
+ .contact_from_group .form-control{
+    display: block;
+     width: 100%;
+     height: 30px;
+     padding: 6px 12px;
+     font-size: 14px;
+     color: #333;
+     background-color: #fff;
+     border: 1px solid #ccc;
+     border-radius: 0px;
+ }
+ .contact_from_group textarea.form-control{
+     height: inherit;
+ }
+ .contact_form .contact_submit{
+    color: #fff;
+     background-color: #ff875a;
+     border-color: #ff875a;
+     border-radius: 0px;
+     display: inline-block;
+     padding: 6px 20px;
+     font-size: 14px;
+     font-weight: 400;
+     margin: 8px 0px 0px 0px;
+ }
+ .contact_form .contact_submit:hover, .contact_form .contact_submit:focus{
+     background-color: #de5a29;
+     color: #fff;
+ }
+ /*=========== wrapper styles end ============*/
+ 

@@ -1,0 +1,41 @@
+<%- include('includes/header') %>
+
+<div class="container reg-page">
+<% if(locals.errors) { %>
+
+<% errors.forEach(function(error){ %>
+<div class="alert alert-danger"><%= error.msg %></div>
+<% }) %>
+
+<% } %>
+<%- messages() %>
+
+      <form class="form-signin" method="post" action="/users/register">
+        <h2 class="form-signin-heading text-center">User Registration</h2>
+        <label for="inputEmail" class="sr-only">Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Name" value="<%=(!!locals.name)?name: '' %>"  autofocus>
+        <br>
+
+ <label for="inputEmail" class="sr-only">Email</label>
+        <input type="text" name="email" class="form-control" placeholder="Email Id" value="<%=(!!locals.email)?email: '' %>"  autofocus>
+        <br>
+        <label for="inputEmail" class="sr-only">username</label>
+        <input type="text" name="username" class="form-control" placeholder="username" value="<%=(!!locals.username)?username: '' %>" autofocus>
+
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" value="<%=(!!locals.password)?password: '' %>" >
+        <br>
+
+        <label for="inputPassword" class="sr-only">Confirm Password</label>
+        <input type="password" name="password2" class="form-control"  value="<%=(!!locals.password2)?password2: '' %>" placeholder="Password Confirm" >
+        <br>
+
+       <p> Have Account? <a href="/users/login">Login</a></p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register Me</button>
+      </form>
+
+    </div> <!-- /container -->
+
+<%- include('includes/footer') %>
+

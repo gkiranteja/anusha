@@ -1,0 +1,230 @@
+/*============================== blue header styles start ===========================*/
+
+/*============================== Main header styles start ===========================*/
+.sub_header{
+    background: #006ec1;
+    padding: 16px 0px 10px 0px;
+  }
+  .sub_header_fields{
+     text-align: right;
+  }
+  .request_btn{
+      background: #338bcd;
+      display: inline-block;
+      position: relative;
+      padding: 0px 20px 0px 65px;
+      margin: 0px 6px;
+  }
+  .request_icon{
+      position: absolute;
+      bottom: 0px;
+      left: 10px;
+      z-index: 1000;
+  }
+  .request_icon>img{
+    width: 90%;
+  }
+  .request_text{
+     font-size: 16px;
+      color: #fff;
+      margin: 0px;
+      padding: 6px 0px 6px 0px;
+      display: inline-block;
+      font-family: "OpenSans-Bold";
+  }
+  .search_btn{
+    display: inline-block;
+    position: relative;
+    margin: 0px 6px;
+  }
+  .search_field{
+  
+  }
+  .header_search_filed{
+    height: 30px;
+      padding: 3px 30px 3px 8px;
+      font-size: 14px;
+      color: #333;
+      font-family: "OpenSans-Bold";
+      border: 1px solid #ccc;
+  }
+  .search_icon{
+      position: absolute;
+      right: 3px;
+      top: 1px;
+      z-index: 1000;
+      width: 25px;
+      height: 25px;
+  }
+  .search_icon>img{
+    width: 100%;
+  }
+  .profile_btn{
+     display: inline-block;
+    position: relative;
+    margin: 0px 8px 0px 8px;
+  }
+  .profile_icon{
+  
+  }
+  .profile_text{
+     font-size: 16px;
+      color: #fff;
+      margin: 0px 2px;
+      font-family: "OpenSans-Bold";
+      vertical-align: bottom;
+  }
+/*============================== blue header styles end ===========================*/
+.menu_navbar{
+    margin: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #595a5a;
+ }
+ .menu_navbar_brand{
+    display: inline-block;
+    height: auto;
+    width: 280px;
+    padding: 10px 10px;
+ }
+ .menu_navbar_brand>img{
+    width: 100%;
+    height: auto;
+ }
+ .menu_navbar_right.nav{
+    padding: 0px;
+    margin: 30px 0px 0px 0px;
+    list-style-type: none;
+ }
+ .menu_navbar_right.nav>li{
+    display: inline-block;
+ }
+ .menu_navbar_right.nav>li>a {
+    padding: 18px 14px;
+    display: inline-block;
+    color: #666;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+ .menu_navbar_right>li:hover>a{
+    text-decoration: none;
+    color: #f36c21;
+    background: transparent;
+    background-color: transparent !important;
+ }
+ .menu_navbar_right>li a:hover, .menu_navbar_right>li a:focus{
+    text-decoration: none;
+    background: transparent;
+    background-color: transparent !important;
+ }
+ .menu_navbar_right>li.open a:hover, .menu_navbar_right>li.open a:focus{
+    text-decoration: none;
+    background: transparent;
+    background-color: transparent !important;
+ }
+ .navbar-right.menu_navbar_right .dropdown-menu {
+    right: auto;
+    left: 0px;
+}
+.dropdown-menu.menu_dropdown_menu>li>a {
+    display: block;
+    padding: 8px 25px 8px 12px;
+    clear: both;
+    font-weight: 500;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
+.dropdown-menu.menu_dropdown_menu{
+    padding: 8px 0px 10px 0px;
+    background: #595a5a;
+    border-top: 3px solid #f36c21;
+}
+.dropdown-menu.menu_dropdown_menu li:hover a{
+    color: #f36c21;
+    background: transparent;
+    background-color: transparent;
+}
+
+.menu_navbar_toggle.navbar-toggle{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 27px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #595a5a;
+    border-radius: 0px;
+}
+.menu_navbar_toggle.navbar-toggle .icon-bar{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 0px;
+    background: #595a5a;
+}
+
+.menu_navbar_toggle.navbar-toggle:hover{
+   border: 1px solid #f36c21;
+}
+.menu_navbar_toggle.navbar-toggle:hover .icon-bar{
+   background: #f36c21;
+}
+ 
+@media only screen and (min-width: 768px) {
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+}
+
+@media (max-width: 767px){
+.menu_navbar_right.nav{
+  margin: 0px;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+}
+.menu_navbar_right.nav>li {
+    display: inline-block;
+    width: 100%;
+}
+.navbar-collapse.menu_navbar_collapse{
+    position: fixed;
+    top: 0px;
+    right: -220px;
+    height: 100% !important;
+    width: 220px;
+    padding: 8px 0px 0px 0px;
+    background: #595a5a;
+    margin: 90px 0px 0px 0px;
+    border-top: 2px solid #f36c21;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+    display: inline-block;
+}
+.menu_navbar_collapse_click{
+    right: 0px !important;
+    -webkit-transition: right 1s !important;
+    transition: right 1s !important;
+}
+.menu_navbar_right.nav>li>a{
+   width: 100%;
+   display: block;
+   color: #fff;
+   padding: 12px 18px;
+   display: inline-block;
+}
+.dropdown-menu.menu_dropdown_menu{
+   padding: 0px 0px 6px 6px;
+}
+.menu_navbar_right.nav>li:hover>a{
+   color: #f36c21;
+   background: transparent;
+}
+.menu_navbar_right.nav>li>a:hover, .menu_navbar_right.nav>li>a:focus{
+   background: transparent;
+}
+}	 
+ /*============================== Main header styles End ===========================*/

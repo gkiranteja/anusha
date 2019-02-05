@@ -1,0 +1,332 @@
+/*--------Solution styles-------*/
+
+.sol_banner{
+    width: 100%;
+    height: 420px;
+ }
+ .banner_img{
+     /* background-image: url(./);  */
+     background-size: cover !important;
+     background-position: 50% 0% !important;
+     width: 100%;
+     height: 100%;
+     background-repeat: no-repeat;
+     display: block;
+ }
+ .banner_block{
+   position: relative;
+ }
+ .banner_content{
+     position: absolute;
+     left: 0px;
+     background: rgba(60, 60, 60, 0.8);
+     display: inline-block;
+     width: 500px;
+     padding: 30px 30px 20px 30px;
+ }
+ .banner_head{
+    color: #fff;
+    font-size: 36px;
+    font-family: "OpenSans-Light";
+    margin: 10px 0px;
+ }
+ .banner_text p{
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 0px;
+    font-family: "OpenSans";
+    min-height: 105px;
+ }
+ .banner_btn{
+    margin: 20px 0px 10px 0px;
+     text-align: right;
+ }
+ .banner_btn>a{
+    color: #fff;
+     font-size: 14px;
+     margin: 10px 0px;
+     font-family: "OpenSans";
+     background: #006ec1;
+     padding: 8px 28px;
+ }
+ .banner_btn>a:hover, .banner_btn>a:focus{
+    text-decoration: none;
+    background: #025ca0;
+ }
+ .sol_form_block{
+    background: #f0f2f5;
+    padding: 40px 0px 40px 0px;
+ }
+ .sol_main_head{
+    color: #666666;
+     font-size: 46px;
+     margin: 15px 0px 22px 0px;
+     font-family: "OpenSans-Light";
+ }
+ .sol_main_text p{
+    font-size: 14px;
+    margin: 10px 0px;
+    color: #666666;
+    font-family: "OpenSans";
+    line-height: 22px;
+ }
+ .sol_form_aside{
+    background: #fff;
+     display: inline-block;
+     width: 100%;
+     padding: 0px;
+     margin: 25px 0px;
+ }
+ .sol_form_head{
+    font-size: 18px;
+    color: #cccccc;
+    margin:0px;
+    font-family: "MyriadPro-Regular";
+    background: #000000;
+    padding: 15px 15px 15px 25px;
+ }
+ .sol_form{
+   padding: 16px 25px 12px 25px;
+     background: #fff;
+ }
+ .sol_form .form-item{
+   margin: 0px !important;
+ }
+ .sol_form .webform-component-textarea .grippie{
+   display: none !important;
+ }
+ .sol_form_control{
+    
+ }
+ .form_field{
+    width: 100%;
+     margin: 5px 0px;
+     background: #fff;
+     border: 0px solid #ccc;
+     border-bottom: 1px dashed #ccc;
+     color: #333;
+     font-size: 14px;
+     font-family: "OpenSans";
+     padding: 4px 10px;
+ }
+ .form_field:focus, .form_field:hover, .form_field:active, .form_field:visited{
+    border: 0px solid #ccc !important;
+     border-bottom: 1px dashed #ccc !important;
+     outline: none !important;
+ }
+ 
+ .form_field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color: #333;
+ }
+ .form_field::-moz-placeholder { /* Firefox 19+ */
+   color: #333;
+ }
+ .form_field:-ms-input-placeholder { /* IE 10+ */
+   color: #333;
+ }
+ .form_field:-moz-placeholder { /* Firefox 18- */
+   color: #333;
+ }
+ 
+ .sol_form .form-actions{
+     text-align: center;
+     margin: 0px;
+ }
+ .sol_sub_btn{
+    font-size: 14px;
+     color: #fff;
+     background: #f06223;
+     border: 1px solid #f06223;
+     padding: 5px 25px;
+     margin: 25px 0px 20px 0px;
+     border-radius: 4px;
+ }
+ .sol_sub_btn:hover{
+   background: #d64606;
+ }
+/*--------Solution styles ends-------*/
+
+/*============================================= Testimonials styles Start ==============================================*/
+.testimonial_block{
+    padding: 50px 0px 0px 0px;
+    background: #f0f2f5;
+ }
+ .testimonial_bg{
+    background: #fff;
+    padding: 25px 25px 25px 25px;
+ }
+ .testimonial_head{
+    color: #666666;
+    font-size: 48px;
+    font-family: "OpenSans-Light";
+    margin: 20px 0px 35px 0px;
+ }
+ .testimonial_description p{
+    font-size: 16px;
+    color: #666;
+    font-family: "OpenSans";
+    margin: 20px 0px 30px 0px;
+ }
+ .testimonial_blog{
+    background: #f1f1f1;
+    padding: 40px 25px 25px 25px;
+    margin: 25px 0px 25px 0px;
+ }
+ .test_image{
+    text-align: center;
+ }
+ .test_image>img{
+    width: inherit;
+ }
+ .profile_description{
+    display: inline-block;
+     width: 100%;
+     margin: -25px 0px 0px 0px;
+     position: relative;
+ }
+ .profile_details{
+    width: 70%;
+     float: left;
+     text-align: right;
+     padding: 30px 15px 10px 75px;
+ }
+ .profile_des_icon{
+    width: 30%;
+    float: left;
+ }
+ .profile_des_icon>img{
+   width: 100%;
+ }
+ .test_description{
+   padding: 0px 0px 20px 75px;
+     position: relative;
+     border-bottom: 1px solid #d9d9d9;
+ }
+ .profile_quote_icon{
+    position: absolute;
+    /* background-image: url(../images/testimonials/quotes.png); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 53px;
+    height: 42px;
+    top: -20px;
+    left: 0px;
+    z-index: 100;
+ }
+ .test_head{
+    font-size: 18px;
+     color: #006699;
+     font-family: "OpenSans-Bold";
+     margin: 10px 0px 16px 0px;
+     line-height: 22px;
+ }
+ .test_para{
+    color: #666666;
+    font-size: 14px;
+    font-family: "OpenSans";
+    margin: 12px 0px 16px 0px;
+ }
+ .test_learn_more{
+    margin: 12px 0px;
+ }
+ .test_learn_more>a{
+    color: #666666;
+    font-size: 14px;
+    font-family: "OpenSans-Bold";
+    margin: 12px 0px 16px 0px;
+ }
+ .test_learn_more>a:hover, .test_learn_more>a:focus{
+    text-decoration: none;
+    color: #333333;
+ }
+ .test_learn_more>a:before{
+     content: "";
+     /* background-image: url(../images/testimonials/test-right-arrow.png); */
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: inline-block;
+     width: 25px;
+     height: 12px;
+     vertical-align: middle;
+     margin: 0px 6px 0px 0px;
+ }
+ .profile_des_head{
+    font-size: 18px;
+     color: #006699;
+     font-family: "OpenSans-Bold";
+     margin: 10px 0px 10px 0px;
+     line-height: 22px;
+ }
+ .profile_des{
+    font-size: 14px;
+    color: #666666;
+    font-family: "OpenSans";
+    margin: 10px 0px;
+ }
+ .display_tbl_cell{
+    display: table;
+ }
+ .test_image{
+   display: table-cell;
+   vertical-align: middle;
+ }
+ 
+ 
+ @media (max-width: 1199px){
+    .test_image>img{
+       width: 100%;
+    }  
+ }
+ 
+ @media (max-width: 767px){
+    .display_tbl_cell {
+         display: block;
+         text-align: center;
+         padding: 0px 0px 50px 0px;
+     }
+     .test_image {
+         display: block;
+         vertical-align: middle;
+         text-align: center;
+     }
+     .test_image>img {
+         width: inherit;
+     }
+ 
+ }
+ 
+ @media (max-width: 550px){
+    .profile_quote_icon{
+       width: 30px;
+       height: 23px;
+       top: -26px;
+       left: -15px;
+    }
+    .test_image>img {
+         width: 100%;
+     }
+    .test_description{
+        padding: 0px 0px 14px 15px;
+    }
+    .profile_details {
+         width: 100%;
+         float: left;
+         text-align: left;
+         padding: 12px 15px 12px 15px;
+     }
+     .profile_des_icon {
+         width: 100%;
+         float: left;
+     }
+     .test_head{
+         margin: 20px 0px 16px 0px;
+     }
+     .profile_description{
+         margin: 0px 0px 0px 0px;
+     }
+ }
+ 
+ /*============================================= Testimonials styles Ends ==============================================*/

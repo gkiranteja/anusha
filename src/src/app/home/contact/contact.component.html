@@ -1,0 +1,185 @@
+<div class="contact_banner">
+  <div class="banner_img">
+    <div class="container">
+      <div class="banner_block">
+        <div class="banner_content">
+            <h4 class="banner_head">Overview</h4>
+            <p class="banner_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh </p>
+            <p class="banner_btn"><a href="#">More...</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="contact_wrapper">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-9">
+            <div class="contact_locations">
+                <div class="locations_head">
+                   <h4>HELLO...</h4>
+                   <p><strong>WE'RE READY TO HELP YOU TRANSFORM YOUR ORGANIZATION.</strong></p>
+                   <p>Please complete the form below and we'll get back to you ASAP to continue the conversation.</p>
+                </div>
+                <div class="locations_map">
+                  <app-maps></app-maps>
+                </div>
+                <div class="locations_list">
+                  <div class="row">
+                    <div class="col-sm-4">
+                        <div class="locations_block">
+                            <h4>US OFFICES</h4>
+                            <ul class="locations_block_ul">
+                               <li>
+                                   <b>SILICON VALLEY HEADQUARTERS</b><br>
+                                   2350 Mission College Blvd. Suite 1250,Santa Clara, CA 95054, USA.<br>>
+                                   Tel: +1-408-387-5800<br>
+                                   Fax: +1-408-387-5702
+                                </li>
+                                <li>
+                                   <b>WASHINGTON DC METRO</b><br>
+                                   2325 Dulles Corner Blvd, Suite 575 Herndon, Virginia 20171, USA.<br>
+                                   Tel: +1-703-793-0101<br>
+                                   Fax: +1-703-793-9619
+                                </li>
+                                <li>
+                                    <b>CHICAGO</b><br>
+                                    8700 W. Bryn Mawr AVE, #820N, Chicago, IL 60631
+                                </li>
+                                <li>
+                                    <b>AUSTIN </b><br>
+                                    100 Congress AVE., STE. 2000, Austin, TX 78701
+                                </li>
+                                <li>
+                                    <b>BOSTON </b><br>
+                                    60 State St., STE. 700, Boston, MA 02109
+                                </li>
+                                <li>
+                                   <b>DENVER </b><br>
+                                   999 18th St., STE 3000, Denver, CO 80202
+                                </li>
+                                <li>
+                                   <b>IRVINE </b><br>
+                                   19800 Macarthur BLVD, STE. 300 Irvine, CA, 92612
+                                </li>
+                                <li>
+                                   <b>RALEIGH</b><br>
+                                   421 Fayetteville St., STE. 1100, Raleigh, NC 27601
+                                </li>
+                                <li>
+                                   <b>SEATTLE</b><br>
+                                   701 Fifth AVE., STE. 4200 Seattle, WA 98104
+                                </li>
+                                <li>
+                                   <b>JERSEY CITY</b><br>
+                                   One Evertrust Plaza, Suite 1201 Jersey City, NJ 07302
+                                </li>
+                            </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                       <div class="locations_block">
+                          <h4>UAE OFFICE</h4>
+                          <ul class="locations_block_ul">
+                              <li>
+                                 <b>DUBAI </b><br>
+                                 Unit 3304, Aspin Commercial Towers, Po Box 392370, Sheikh Zayed Road, Dubai, UAE.<br>
+                                 Tel: +971-43556412<br>
+                                 Fax: +971-43556419
+                              </li>
+                          </ul>
+                       </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="locations_block">
+                            <h4>INDIA OFFICES</h4>
+                            <ul class="locations_block_ul">
+                                <li>
+                                   <b>BENGALURU </b><br>
+                                   # 165/2, 6th Floor, Kalyani Magnum Doraisani Palya, Bannerghatta Road, Bengaluru - 560076, India.<br>
+                                   Tel: +91-80-4664-0000<br>
+                                   Fax: +91-80-4664-0001
+                                </li>
+                                <li>
+                                   <b>CHENNAI </b><br>
+                                   Block B-6, 2nd Floor, Shriram the Gateway, # 16, Gst Road, Perungulathur, Chennai - 600063, India.<br>
+                                   Tel: +91-44-3013-8000<br>
+                                   Fax: +91-44-3013-8003
+                                </li>
+                                <li>
+                                   <b>HYDERABAD </b><br>
+                                   2nd Floor, Building No.14, K Raheja Mindspace, Hitech City, Hyderabad - 500081, India.<br>
+                                   Tel: +91-40-4664-0000<br>
+                                   Fax: +91-40-4664-0002
+                                </li>
+                            </ul>
+                         </div>
+                    </div>
+                  </div>   
+                </div>
+            </div>
+         </div>
+         <div class="col-sm-3"> 
+             <div class="contact_form">
+                 <h3 class="contact_from_head">CONTACT US TODAY</h3>
+                 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group contact_from_group">
+                      <label for="firstName">First Name:</label>
+                      <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" id="firstName" name="firstName">
+                      <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                        <div *ngIf="f.firstName.errors.required && firstName.touched">First Name is required</div>
+                        <div *ngIf="f.firstName.errors.minlength && firstName.touched">Firstname must be at least 6 characters</div>
+                    </div>
+                    </div>
+                    <div class="form-group contact_from_group">
+                      <label for="lastName">Last Name:</label>
+                      <input type="text" formControlName="lastName" class="form-control" id="lastName" name="lastName" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+                      <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                    </div>
+                    </div>
+                    <div class="form-group contact_from_group">
+                      <label for="company">Company:</label>
+                      <input type="text" formControlName="company" class="form-control" id="company" name="company" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+                      <div *ngIf="submitted && f.company.errors" class="invalid-feedback">
+                        <div *ngIf="f.company.errors.required">First Name is required</div>
+                        <div *ngIf="f.company.errors.minlength">Firstname must be at least 6 characters</div>
+                    </div>
+                      
+                    </div>
+                    <div class="form-group contact_from_group">
+                      <label for="businessEmail">Business Email:</label>
+                      <input type="text" formControlName="email" class="form-control" id="businessEmail" name="businessEmail" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                    </div>
+                    </div>
+                    <div class="form-group contact_from_group">
+                      <label for="phone_number">Phone Number:</label>
+                      <input myNumberOnly type="text" formControlName="phone_number" class="form-control" id="phone_number" name="phone_number" [ngClass]="{ 'is-invalid': submitted && f.phone_number.errors }">
+                      <div *ngIf="submitted && f.phone_number.errors" class="invalid-feedback">
+                        <div *ngIf="f.phone_number.errors.required">First Name is required</div>
+                        <div *ngIf="f.phone_number.errors.minlength">Firstname must be at least 6 characters</div>
+                    </div>
+                    </div>
+                    <div class="form-group contact_from_group">
+                      <label for="message">Message:</label>
+                      <textarea class="form-control" formControlName="message" rows="3" id="message" name="message" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+                      <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                        <div *ngIf="f.message.errors.required">First Name is required</div>
+                        <div *ngIf="f.message.errors.minlength">Firstname must be at least 6 characters</div>
+                    </div>
+                    </div>
+                    
+                    <button type="submit" [disabled]="!registerForm.invalid" class="btn btn-default contact_submit">LET'S TALK</button>
+                   </form>
+             </div>
+         </div>
+      </div>
+   </div>
+</div>

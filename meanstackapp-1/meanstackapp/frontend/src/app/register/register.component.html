@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup]="registerForm">
+        <div class="form-group">
+            <input type="text" formControlName="username" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+        </div>
+        <div class="form-group">
+            <input formControlName="email" type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+        </div>
+        <div class="form-group">
+            <input type="password" formControlName="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="password" formControlName="cpassword" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <!-- <button type="button" class="btn btn-dark" (click)="register()">Register</button> -->
+                    <button type="button" class="btn btn-dark" (click)="register()">Register</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div *ngIf="payload" class="form-row">
+      <strong>Saved the following values</strong><br>{{payload}}
+  </div> -->
+        <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    </form>
+</div>
